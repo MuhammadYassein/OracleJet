@@ -5,19 +5,12 @@
 /*
  * Your dashboard ViewModel code goes here
  */
-define(['ojs/ojcore', 'knockout', 'jquery' ,'ojs/ojchart'],
- function(oj, ko, $) {
+define(['ojs/ojcore', 'knockout', 'jquery' ,'text!data/datafile.json','ojs/ojchart'],
+ function(oj, ko, $ , file) {
   
     function DashboardViewModel() {
       var self = this;
-      var arr =[
-          {name:"Monitor"   , items:[1200]},
-          {name:"Hard Disk" , items:[3500]},
-          {name:"KeyBoard"  , items:[4500]},
-          {name:"Mouse"     , items:[2800]},
-          {name:"Sound"     , items:[3000]},
-          {name:"USB"       , items:[8000]}
-                    ];
+      var arr = JSON.parse(file);
           
           
       self.datasource =  ko.observableArray(arr);

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Monitor",
+        "items": [1200]
+    },
+    {
+        "name": "Hard Disk",
+        "items": [3500]
+    },
+    {
+        "name": "KeyBoard",
+        "items": [4500]
+    },
+    {
+        "name": "Mouse",
+        "items": [2800]
+    },
+    {
+        "name": "Sound",
+        "items": [3000]
+    },
+    {
+        "name": "USB",
+        "items": [8000]
+    }
+]
